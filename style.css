@@ -431,45 +431,63 @@ p {
   color: #333;
 }
 
-nav .humMenu {
+.humLines {
   position: fixed;
-  z-index: 100;
   top: 0;
-  left: 0;
-  background: #fff;
-  color: #000;
-  text-align: center;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
-  width: 100%;
-}
-
-nav .humMenu ul {
-  background: #ccc;
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-}
-
-nav .humMenu ul li {
-  font-size: 1.1em;
-  list-style-type: none;
-  padding: 0;
-  width: 100%;
-  border-bottom: 1px dotted #333;
-}
-
-nav .humMenu ul li:last-child {
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-nav .humMenu ul li a {
+  right: 0;
+  width: 20%;
+  height: 4.5rem;
+  cursor: pointer;
+  background: #6cc6c4;
   display: block;
-  color: #000;
-  padding: 1em 0;
+  text-align: center;
+}
+
+.humLines span {
+  display: block;
+  position: absolute;
+  width: 75%;
+  border-top: 8px solid #fff;
+  margin-left: 8px;
+}
+
+.humLines span:nth-child(1) {
+  top: 15px;
+}
+
+.humLines span:nth-child(2) {
+  top: 35px;
+}
+
+.humLines span:nth-child(3) {
+  top: 55px;
+}
+
+.humMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.humMenu .active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.humMenu ul {
+  background: #6cc6c4;
+}
+
+.humMenu ul li {
+  font-size: 1.2rem;
+}
+
+.humMenu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
 }
 
 .index {
@@ -536,7 +554,7 @@ nav .humMenu ul li a {
 
 #access .inner .map {
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
 #access .inner a {
