@@ -1,0 +1,703 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f3f0f0;
+}
+
+.headBorder {
+  border: 5px solid rgb(108, 198, 196);
+  width: 100vw;
+}
+
+.center {
+  max-width: 960px;
+  margin: auto;
+}
+
+.headText {
+  padding: 2vh 0 2vh;
+  width: 280px;
+  margin: 0 0 0 auto;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+header {
+  display: flex;
+  .headLogo {
+    background: url(imgs/siteTitle.png) no-repeat center;
+    width: 260px;
+    height: 60px;
+  }
+  .headRight {
+    margin: 0 0 0 auto;
+    width: 280px;
+    color: #333;
+    .tel {
+      font-size: 2rem;
+      margin-top: 0.5rem;
+      .fas {
+        font-size: 1.7rem;
+        padding-right: 1rem;
+      }
+    }
+    .openHour {
+      font-size: 0.9rem;
+      border: 1px solid;
+      border-radius: 1px;
+      height: 2.5rem;
+      text-align: center;
+      padding: 11px;
+      margin-top: 0.6rem;
+      span {
+        color: #d00606;
+      }
+    }
+  }
+}
+
+nav {
+  display: block;
+}
+
+#gnavi {
+  border: 1px solid rgb(108, 198, 196);
+  margin: 1.2rem 0 1.2rem 0;
+  height: 6.6rem;
+  background-color: rgb(108, 198, 196);
+  border-radius: 5px;
+  background: linear-gradient(
+    to bottom,
+    rgb(169, 218, 217),
+    rgb(108, 198, 196)
+  );
+  ul {
+    li {
+      height: 6.5rem;
+      float: left;
+      width: 20%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      + li {
+        border-left: 1px solid rgb(108, 198, 196);
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 2rem 0;
+        span {
+          display: inline-block;
+          width: 100%;
+          padding-top: 8px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+#clinicInfo {
+  display: flex;
+  .sideMenu {
+    width: 300px;
+    section {
+      border: 1px solid rgb(108, 198, 196);
+      margin-bottom: 1.2rem;
+      border-radius: 5px 5px 1px 1px;
+      .side_title {
+        display: flex;
+        align-items: center;
+        padding-left: 1.5rem;
+        height: 3rem;
+        background-color: rgb(108, 198, 196);
+        background: linear-gradient(
+          to bottom,
+          rgb(169, 218, 217),
+          rgb(108, 198, 196)
+        );
+        p {
+          color: white;
+          line-height: 3rem;
+          width: 85%;
+          margin: auto;
+        }
+      }
+      ul {
+        padding-bottom: 1.2rem;
+        background-color: white;
+        li {
+          height: 2.7rem;
+          border-bottom: 1px solid rgb(108, 198, 196);
+          width: 85%;
+          margin: auto;
+          a {
+            line-height: 2.7rem;
+            text-decoration: none;
+            color: #333;
+            width: 100%;
+            display: inline-block;
+            .fas {
+              color: rgb(108, 198, 196);
+              transform: rotate(45deg);
+              font-size: 0.5rem;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footNavi {
+  margin: 1rem 0;
+  height: 2rem;
+  background-color: rgb(108, 198, 196);
+  border-radius: 5px;
+  ul {
+    li {
+      float: left;
+      padding: 8px 0;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.9rem;
+        margin-right: 1rem;
+        .far {
+          margin: 0 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .baseInfo {
+    padding-bottom: 2vh;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #333;
+    span {
+      font-weight: bold;
+    }
+  }
+  .footerBorder {
+    border: 1px solid rgb(108, 198, 196);
+  }
+  .copyRight {
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    font-size: 0.8rem;
+    color: #333;
+  }
+}
+
+.inner {
+  padding: 0 1rem 0 1rem;
+  background-color: white;
+  border-radius: 1px 1px 5px 5px;
+}
+
+.contentBorder {
+  border: 2px solid rgb(108, 198, 196);
+  width: 100%;
+  margin: auto;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bolder;
+}
+.title {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  height: 7rem;
+  background: linear-gradient(
+    to bottom,
+    rgb(169, 218, 217),
+    rgb(108, 198, 196)
+  );
+  border: 1px solid rgb(108, 198, 196);
+  border-radius: 5px 5px 1px 1px;
+}
+
+.h3_container {
+  padding: 2rem 0 1rem 0;
+}
+.h3_title {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+h3 {
+  font-weight: bolder;
+  color: #333;
+}
+
+.h4_title {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+h4 {
+  color: rgb(108, 198, 196);
+  font-weight: bolder;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.6em;
+  padding-bottom: 1rem;
+  color: #333;
+}
+//////////////////////////////////humberger_manu///////////////
+nav .humMenu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+  width: 100%;
+}
+
+nav .humMenu ul {
+  background: #ccc;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav .humMenu ul li {
+  font-size: 1.1em;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px dotted #333;
+}
+
+nav .humMenu ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+nav .humMenu ul li a {
+  display: block;
+  color: #000;
+  padding: 1em 0;
+}
+
+//////////////////////////////humberger_menu_end////////////
+
+//////////////////////////////index.html////////////////////
+.index {
+  margin: 0 0 0 auto;
+  width: 640px;
+  .clinicImg {
+    width: 640px;
+    height: 280px;
+    background-color: silver;
+    font-size: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .size {
+      text-align: center;
+      line-height: 5rem;
+    }
+  }
+  .latestInfo {
+    color: #333;
+    padding-top: 0.5rem;
+    .inner {
+      .info_title {
+        font-weight: bolder;
+      }
+      .info_list {
+        li {
+          display: flex;
+          font-size: 0.9rem;
+          line-height: 1.6em;
+          border-bottom: 1px dotted silver;
+          padding: 1rem;
+          .postDate {
+            width: 20%;
+            font-size: 0.8rem;
+            font-weight: bolder;
+          }
+          p {
+            width: 78%;
+            margin: 0 0 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+///////////////////index.html_end/////////////////////////
+
+///////////////////access.html///////////////////////////
+#access {
+  width: 640px;
+  margin: 0 0 0 auto;
+  .inner {
+    .map {
+      width: 100%;
+      height: 300px;
+    }
+    a {
+      display: inline-block;
+      padding: 5px 0 5px 0;
+    }
+    .access_address {
+      display: flex;
+      .accessPic {
+        width: 200px;
+        height: 200px;
+        background-color: silver;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .size {
+          text-align: center;
+          line-height: 1.3em;
+          color: #333;
+        }
+      }
+      .address_container {
+        padding: 0 1rem;
+        color: #333;
+        .address {
+          line-height: 3rem;
+          font-size: 0.9rem;
+        }
+        .howTo {
+          font-size: 0.9rem;
+          line-height: 1.6em;
+        }
+      }
+    }
+  }
+}
+///////////////////access.html_end///////////////////////
+
+///////////////////service.html/////////////////////////
+#service {
+  width: 640px;
+  margin: 0 0 0 auto;
+}
+//////////////////service.html_end//////////////////////
+
+//////////////////clinic.html///////////////////////////
+#clinic {
+  width: 640px;
+  margin: 0 0 0 auto;
+  .biz_hour {
+    border-collapse: collapse;
+    margin: 1rem 0 1rem 0;
+    width: 100%;
+    th {
+      background-color: silver;
+      padding: 0 0.3rem;
+    }
+    th,
+    td {
+      border: 1px solid #969494;
+      height: 3.5rem;
+      text-align: center;
+      line-height: 3.5rem;
+    }
+  }
+  span {
+    font-weight: bolder;
+    padding-right: 1rem;
+  }
+}
+//////////////////clinic.html_end///////////////////////
+
+//////////////////staff.html////////////////////////////
+#staff {
+  width: 640px;
+  margin: 0 0 0 auto;
+  .bossIntro {
+    display: flex;
+    .bossPic {
+      margin-top: 0.8rem;
+      background-color: silver;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      .size {
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+        line-height: 1.5em;
+      }
+    }
+    .bossInfo {
+      margin: 1rem;
+    }
+  }
+  .bossName {
+    background-color: rgb(108, 198, 196);
+    color: white;
+    width: 200px;
+    height: 1.8rem;
+    text-align: center;
+    line-height: 1.8rem;
+    border-radius: 1px;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+  .staffIntro {
+    .staffPic {
+      background-color: silver;
+      width: 608px;
+      height: 450px;
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      .size {
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+        margin: auto;
+        text-align: center;
+        line-height: 1.4em;
+      }
+    }
+  }
+}
+
+//////////////////staff.html_end/////////////////////////
+
+//////////////////mobile/////////////////////////////////
+@media screen and (max-width: 680px) {
+  .center {
+    .headText {
+      margin-left: 1rem;
+    }
+    header {
+      flex-direction: column;
+      .headLogo {
+        margin-left: 1rem;
+      }
+      .headRight {
+        margin: auto;
+      }
+    }
+    #gnavi {
+      display: none;
+    }
+    #clinicInfo {
+      margin: 1rem;
+      .sideMenu {
+        display: none;
+      }
+      .index {
+        .info_list li {
+          flex-direction: column;
+          .postDate {
+            width: 100%;
+          }
+          P {
+            width: 100%;
+          }
+        }
+      }
+      #staff {
+        .h3_container {
+          .bossIntro {
+            flex-direction: column;
+            .bossInfo {
+              margin: 0;
+            }
+          }
+          .staffIntro {
+            .staffPic {
+              width: 100%;
+              height: 30vh;
+            }
+          }
+        }
+      }
+      #clinic {
+        p {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      #access {
+        .inner {
+          .h3_container {
+            .access_address {
+              flex-direction: column;
+              .address_container {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footNavi {
+      display: none;
+    }
+    footer {
+      .baseInfo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        span {
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .humMenu {
+    display: none;
+  }
+}
+/////////////////mobile_end//////////////////////////////

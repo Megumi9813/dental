@@ -1,0 +1,784 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f3f0f0;
+}
+
+.headBorder {
+  border: 5px solid #6cc6c4;
+  width: 100vw;
+}
+
+.center {
+  max-width: 960px;
+  margin: auto;
+}
+
+.headText {
+  padding: 2vh 0 2vh;
+  width: 280px;
+  margin: 0 0 0 auto;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .headLogo {
+  background: url(imgs/siteTitle.png) no-repeat center;
+  width: 260px;
+  height: 60px;
+}
+
+header .headRight {
+  margin: 0 0 0 auto;
+  width: 280px;
+  color: #333;
+}
+
+header .headRight .tel {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+header .headRight .tel .fas {
+  font-size: 1.7rem;
+  padding-right: 1rem;
+}
+
+header .headRight .openHour {
+  font-size: 0.9rem;
+  border: 1px solid;
+  border-radius: 1px;
+  height: 2.5rem;
+  text-align: center;
+  padding: 11px;
+  margin-top: 0.6rem;
+}
+
+header .headRight .openHour span {
+  color: #d00606;
+}
+
+nav {
+  display: block;
+}
+
+#gnavi {
+  border: 1px solid #6cc6c4;
+  margin: 1.2rem 0 1.2rem 0;
+  height: 6.6rem;
+  background-color: #6cc6c4;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a9dad9), to(#6cc6c4));
+  background: linear-gradient(to bottom, #a9dad9, #6cc6c4);
+}
+
+#gnavi ul li {
+  height: 6.5rem;
+  float: left;
+  width: 20%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#gnavi ul li + li {
+  border-left: 1px solid #6cc6c4;
+}
+
+#gnavi ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 2rem 0;
+}
+
+#gnavi ul li a span {
+  display: inline-block;
+  width: 100%;
+  padding-top: 8px;
+  font-size: 0.8rem;
+}
+
+#clinicInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#clinicInfo .sideMenu {
+  width: 300px;
+}
+
+#clinicInfo .sideMenu section {
+  border: 1px solid #6cc6c4;
+  margin-bottom: 1.2rem;
+  border-radius: 5px 5px 1px 1px;
+}
+
+#clinicInfo .sideMenu section .side_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.5rem;
+  height: 3rem;
+  background-color: #6cc6c4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a9dad9), to(#6cc6c4));
+  background: linear-gradient(to bottom, #a9dad9, #6cc6c4);
+}
+
+#clinicInfo .sideMenu section .side_title p {
+  color: white;
+  line-height: 3rem;
+  width: 85%;
+  margin: auto;
+}
+
+#clinicInfo .sideMenu section ul {
+  padding-bottom: 1.2rem;
+  background-color: white;
+}
+
+#clinicInfo .sideMenu section ul li {
+  height: 2.7rem;
+  border-bottom: 1px solid #6cc6c4;
+  width: 85%;
+  margin: auto;
+}
+
+#clinicInfo .sideMenu section ul li a {
+  line-height: 2.7rem;
+  text-decoration: none;
+  color: #333;
+  width: 100%;
+  display: inline-block;
+}
+
+#clinicInfo .sideMenu section ul li a .fas {
+  color: #6cc6c4;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  font-size: 0.5rem;
+  padding-right: 10px;
+}
+
+.footNavi {
+  margin: 1rem 0;
+  height: 2rem;
+  background-color: #6cc6c4;
+  border-radius: 5px;
+}
+
+.footNavi ul li {
+  float: left;
+  padding: 8px 0;
+}
+
+.footNavi ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+
+.footNavi ul li a .far {
+  margin: 0 0.8rem;
+}
+
+footer .baseInfo {
+  padding-bottom: 2vh;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+footer .baseInfo span {
+  font-weight: bold;
+}
+
+footer .footerBorder {
+  border: 1px solid #6cc6c4;
+}
+
+footer .copyRight {
+  text-align: center;
+  padding: 2vh 0 2vh 0;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.inner {
+  padding: 0 1rem 0 1rem;
+  background-color: white;
+  border-radius: 1px 1px 5px 5px;
+}
+
+.contentBorder {
+  border: 2px solid #6cc6c4;
+  width: 100%;
+  margin: auto;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bolder;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1rem;
+  height: 7rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a9dad9), to(#6cc6c4));
+  background: linear-gradient(to bottom, #a9dad9, #6cc6c4);
+  border: 1px solid #6cc6c4;
+  border-radius: 5px 5px 1px 1px;
+}
+
+.h3_container {
+  padding: 2rem 0 1rem 0;
+}
+
+.h3_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+}
+
+h3 {
+  font-weight: bolder;
+  color: #333;
+}
+
+.h4_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+h4 {
+  color: #6cc6c4;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.6em;
+  padding-bottom: 1rem;
+  color: #333;
+}
+
+nav .humMenu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  width: 100%;
+}
+
+nav .humMenu ul {
+  background: #ccc;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav .humMenu ul li {
+  font-size: 1.1em;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px dotted #333;
+}
+
+nav .humMenu ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+nav .humMenu ul li a {
+  display: block;
+  color: #000;
+  padding: 1em 0;
+}
+
+.index {
+  margin: 0 0 0 auto;
+  width: 640px;
+}
+
+.index .clinicImg {
+  width: 640px;
+  height: 280px;
+  background-color: silver;
+  font-size: 3.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index .clinicImg .size {
+  text-align: center;
+  line-height: 5rem;
+}
+
+.index .latestInfo {
+  color: #333;
+  padding-top: 0.5rem;
+}
+
+.index .latestInfo .inner .info_title {
+  font-weight: bolder;
+}
+
+.index .latestInfo .inner .info_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.9rem;
+  line-height: 1.6em;
+  border-bottom: 1px dotted silver;
+  padding: 1rem;
+}
+
+.index .latestInfo .inner .info_list li .postDate {
+  width: 20%;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.index .latestInfo .inner .info_list li p {
+  width: 78%;
+  margin: 0 0 0 auto;
+}
+
+#access {
+  width: 640px;
+  margin: 0 0 0 auto;
+}
+
+#access .inner .map {
+  width: 100%;
+  height: 300px;
+}
+
+#access .inner a {
+  display: inline-block;
+  padding: 5px 0 5px 0;
+}
+
+#access .inner .access_address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#access .inner .access_address .accessPic {
+  width: 200px;
+  height: 200px;
+  background-color: silver;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#access .inner .access_address .accessPic .size {
+  text-align: center;
+  line-height: 1.3em;
+  color: #333;
+}
+
+#access .inner .access_address .address_container {
+  padding: 0 1rem;
+  color: #333;
+}
+
+#access .inner .access_address .address_container .address {
+  line-height: 3rem;
+  font-size: 0.9rem;
+}
+
+#access .inner .access_address .address_container .howTo {
+  font-size: 0.9rem;
+  line-height: 1.6em;
+}
+
+#service {
+  width: 640px;
+  margin: 0 0 0 auto;
+}
+
+#clinic {
+  width: 640px;
+  margin: 0 0 0 auto;
+}
+
+#clinic .biz_hour {
+  border-collapse: collapse;
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+}
+
+#clinic .biz_hour th {
+  background-color: silver;
+  padding: 0 0.3rem;
+}
+
+#clinic .biz_hour th,
+#clinic .biz_hour td {
+  border: 1px solid #969494;
+  height: 3.5rem;
+  text-align: center;
+  line-height: 3.5rem;
+}
+
+#clinic span {
+  font-weight: bolder;
+  padding-right: 1rem;
+}
+
+#staff {
+  width: 640px;
+  margin: 0 0 0 auto;
+}
+
+#staff .bossIntro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#staff .bossIntro .bossPic {
+  margin-top: 0.8rem;
+  background-color: silver;
+  width: 200px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#staff .bossIntro .bossPic .size {
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+  line-height: 1.5em;
+}
+
+#staff .bossIntro .bossInfo {
+  margin: 1rem;
+}
+
+#staff .bossName {
+  background-color: #6cc6c4;
+  color: white;
+  width: 200px;
+  height: 1.8rem;
+  text-align: center;
+  line-height: 1.8rem;
+  border-radius: 1px;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+#staff .staffIntro .staffPic {
+  background-color: silver;
+  width: 608px;
+  height: 450px;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#staff .staffIntro .staffPic .size {
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: auto;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+@media screen and (max-width: 680px) {
+  .center .headText {
+    margin-left: 1rem;
+  }
+  .center header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .center header .headLogo {
+    margin-left: 1rem;
+  }
+  .center header .headRight {
+    margin: auto;
+  }
+  .center #gnavi {
+    display: none;
+  }
+  .center #clinicInfo {
+    margin: 1rem;
+  }
+  .center #clinicInfo .sideMenu {
+    display: none;
+  }
+  .center #clinicInfo .index .info_list li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .center #clinicInfo .index .info_list li .postDate {
+    width: 100%;
+  }
+  .center #clinicInfo .index .info_list li P {
+    width: 100%;
+  }
+  .center #clinicInfo #staff .h3_container .bossIntro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .center #clinicInfo #staff .h3_container .bossIntro .bossInfo {
+    margin: 0;
+  }
+  .center #clinicInfo #staff .h3_container .staffIntro .staffPic {
+    width: 100%;
+    height: 30vh;
+  }
+  .center #clinicInfo #clinic p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .center #clinicInfo #access .inner .h3_container .access_address {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .center #clinicInfo #access .inner .h3_container .access_address .address_container {
+    padding: 0;
+  }
+  .center .footNavi {
+    display: none;
+  }
+  .center footer .baseInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .center footer .baseInfo span {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .humMenu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
