@@ -220,7 +220,8 @@ header {
     }
   }
   .breadcrumb {
-    margin: 0 0 1.2rem 1.2rem;
+    margin: 0 auto 1.2rem auto;
+    width: 960px;
     ul {
       display: flex;
       li {
