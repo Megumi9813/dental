@@ -16,43 +16,38 @@
     <title>Dental Clinic</title>
   </head>
   <body>
-    <div class="headBorder"></div>
-    <div class="center">
-      <div class="headText">
-        “地域に根付いた歯科医院” デンタル クリニック
+    <header>
+      <div id="navArea">
+        <nav class="humMenu">
+          <ul>
+            <li><a href="index.html">トップメニュー HOME</a></li>
+            <li><a href="clinic.html">医院紹介 CLINIC</a></li>
+            <li><a href="service.html">診療案内 SERVICE</a></li>
+            <li><a href="staff.html">院長・スタッフ紹介 STAFF</a></li>
+            <li><a href="access.html">アクセス ACCESS</a></li>
+          </ul>
+        </nav>
+        <div class="toggle_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="mask"></div>
       </div>
-      <header>
+      <div class="headBorder"></div>
+      <div class="head_container">
         <div class="headLogo"></div>
         <div class="headRight">
+          <div class="headText">
+            “地域に根付いた歯科医院” デンタル クリニック
+          </div>
           <div class="tel"><i class="fas fa-phone-alt"></i>03-0000-0000</div>
           <div class="openHour">
             予約受付時間 10:00～19:30 <span>日祝 休診</span>
           </div>
         </div>
-      </header>
-      <nav class="humMenu">
-        <ul>
-            <li><a href="#">トップページ<span>HOME</span></a></li>
-            <li><a href="#">医院紹介<span>CLINIC</span></a></li>
-            <li><a href="#">診療案内<span>SERVICE</span></a></li>
-            <li><a href="#">院長・スタッフ紹介<span>STAFF</span></a></li>
-            <li><a href="#">アクセス<span>ACCESS</span></a></li>
-            <div class="sideTitle">一般歯科</div>
-            <li><a href="#">虫歯治療</a></li>
-            <li><a href="#">歯周病治療</a></li>
-            <li><a href="#">入れ歯</a></li>
-            <li><a href="#">予防歯科</a></li>
-            <div class="sideTitle">審美歯科</div>
-            <li><a href="#">ホワイトニング</a></li>
-            <li><a href="#">オールセラミック</a></li>
-            <li><a href="#">セラミックインレー</a></li>
-            <li><a href="#">PMTC</a></li>
-        </ul>
-    　</nav>
-      <div class="humLines">
-        <span></span><span></span><span></span>
-    　</div>
-      <nav id="gnavi">
+      </div>
+      <div id="gnavi">
         <ul>
           <li>
             <a href="index.html">トップページ<span>HOME</span></a>
@@ -70,23 +65,25 @@
             <a href="access.html">アクセス<span>ACESS</span></a>
           </li>
         </ul>
-      </nav>
+      </div>
+    </header>
+    <div class="center">
       <div id="clinicInfo">
-        <div class="sideMenu">
+        <aside class="sideMenu">
           <section>
             <h2 class="side_title">一般歯科</h2>
             <ul>
               <li>
-                <a href="service.html"><i class="fas fa-square-full"></i></i>虫歯治療</a>
+                <a href="service.html#side1"><i class="fas fa-square-full"></i></i>虫歯治療</a>
               </li>
               <li>
-                <a href="service.html"><i class="fas fa-square-full"></i></i>歯周病治療</a>
+                <a href="service.html#side2"><i class="fas fa-square-full"></i></i>歯周病治療</a>
               </li>
               <li>
-                <a href="service.html"><i class="fas fa-square-full"></i></i>入れ歯</a>
+                <a href="service.html#side3"><i class="fas fa-square-full"></i></i>入れ歯</a>
               </li>
               <li>
-                <a href="service.html"><i class="fas fa-square-full"></i></i>予防歯科</a>
+                <a href="service.html#side4"><i class="fas fa-square-full"></i></i>予防歯科</a>
               </li>
             </ul>
           </section>
@@ -94,20 +91,20 @@
             <h2 class="side_title">審美歯科</h2>
             <ul>
               <li>
-                <a href="service.html"><i class="fas fa-square-full"></i></i>ホワイトニング</a>
+                <a href="service.html#side5"><i class="fas fa-square-full"></i></i>ホワイトニング</a>
               </li>
               <li>
-                <a href="service.html"><i class="fas fa-square-full"></i></i>オールセラミック</a>
+                <a href="service.html#side6"><i class="fas fa-square-full"></i></i>オールセラミック</a>
               </li>
               <li>
-                <a href="service.html"><i class="fas fa-square-full"></i></i>セラミックインレー</a>
+                <a href="service.html#side7"><i class="fas fa-square-full"></i></i>セラミックインレー</a>
               </li>
               <li>
-                <a href="service.html"><i class="fas fa-square-full"></i></i>PMTC</a>
+                <a href="service.html#side8"><i class="fas fa-square-full"></i></i>PMTC</a>
               </li>
             </ul>
           </section>
-        </div>
+        </aside>
         <div class="index">
           <div class="clinicImg">
             <div class="size">in01.ipg<br >640×280</div>
@@ -144,6 +141,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <footer>
       <div class="footNavi">
         <ul>
           <li>
@@ -163,29 +162,32 @@
           </li>
         </ul>
       </div>
-      <footer>
-        <div class="baseInfo">
-          <span>デンタル クリニック</span> 東京都新宿区市谷左内町21-13
-          TEL:03-0000-0000
-        </div>
-        <div class="footerBorder"></div>
-        <div class="copyRight">
-          Copyright 2012 Dental Clinic CO.,LTD All Rights Reserved.
-        </div>
-      </footer>
-    </div>
+      <div class="baseInfo">
+        <span>デンタル クリニック</span> 東京都新宿区市谷左内町21-13
+        TEL:03-0000-0000
+      </div>
+      <div class="footerBorder"></div>
+      <div class="copyRight">
+        Copyright 2012 Dental Clinic CO.,LTD All Rights Reserved.
+      </div>
+    </footer>
     <script>
-      $(function() {
-    $('.humLines').click(function() {
-        $(this).toggleClass('active');
- 
-        if ($(this).hasClass('active')) {
-            $('.humMenu').addClass('active');
-        } else {
-            $('.humMenu').removeClass('active');
-        }
-    });
-});
+　　　　$(function () {
+  var $nav = $('#navArea');
+  var $btn = $('.toggle_btn');
+  var $mask = $('#mask');
+  var active = 'active'; 
+  $btn.on('click', function () {
+    if (!$nav.hasClass(active)) {
+      $nav.addClass(active);
+    } else {
+      $nav.removeClass(active);
+    }
+  });
+  $mask.on('click', function () {
+    $nav.removeClass(active);
+  });
+})
     </script>
   </body>
 </html>

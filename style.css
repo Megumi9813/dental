@@ -139,17 +139,33 @@ body {
   background-color: #f3f0f0;
 }
 
-.headBorder {
-  border: 5px solid #6cc6c4;
-  width: 100vw;
+header .headBorder {
+  border-top: 8px solid #6cc6c4;
+  width: 100%;
+  position: fixed;
 }
 
-.center {
+header .head_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 960px;
   margin: auto;
 }
 
-.headText {
+header .head_container .headLogo {
+  background: url(imgs/siteTitle.png) no-repeat center;
+  width: 250px;
+  margin: 2rem 0 0 1rem;
+}
+
+header .head_container .headRight {
+  margin: 0 0 0 auto;
+  width: 280px;
+  color: #333;
+}
+
+header .head_container .headRight .headText {
   padding: 2vh 0 2vh;
   width: 280px;
   margin: 0 0 0 auto;
@@ -157,64 +173,43 @@ body {
   color: #333;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .headLogo {
-  background: url(imgs/siteTitle.png) no-repeat center;
-  width: 260px;
-  height: 60px;
-}
-
-header .headRight {
-  margin: 0 0 0 auto;
-  width: 280px;
-  color: #333;
-}
-
-header .headRight .tel {
+header .head_container .headRight .tel {
   font-size: 2rem;
   margin-top: 0.5rem;
 }
 
-header .headRight .tel .fas {
+header .head_container .headRight .tel .fas {
   font-size: 1.7rem;
   padding-right: 1rem;
 }
 
-header .headRight .openHour {
+header .head_container .headRight .openHour {
   font-size: 0.9rem;
   border: 1px solid;
   border-radius: 1px;
   height: 2.5rem;
   text-align: center;
   padding: 11px;
-  margin-top: 0.6rem;
+  margin: 0.6rem 0 1rem 0;
 }
 
-header .headRight .openHour span {
+header .head_container .headRight .openHour span {
   color: #d00606;
 }
 
-nav {
-  display: block;
-}
-
-#gnavi {
+header #gnavi {
+  max-width: 960px;
   border: 1px solid #6cc6c4;
-  margin: 1.2rem 0 1.2rem 0;
-  height: 6.6rem;
+  margin: 0 auto 1.2rem auto;
+  height: 6rem;
   background-color: #6cc6c4;
   border-radius: 5px;
   background: -webkit-gradient(linear, left top, left bottom, from(#a9dad9), to(#6cc6c4));
   background: linear-gradient(to bottom, #a9dad9, #6cc6c4);
 }
 
-#gnavi ul li {
-  height: 6.5rem;
+header #gnavi ul li {
+  height: 5.9rem;
   float: left;
   width: 20%;
   text-align: center;
@@ -226,11 +221,11 @@ nav {
           align-items: center;
 }
 
-#gnavi ul li + li {
+header #gnavi ul li + li {
   border-left: 1px solid #6cc6c4;
 }
 
-#gnavi ul li a {
+header #gnavi ul li a {
   text-decoration: none;
   color: white;
   display: inline-block;
@@ -239,30 +234,54 @@ nav {
   padding: 2rem 0;
 }
 
-#gnavi ul li a span {
+header #gnavi ul li a span {
   display: inline-block;
   width: 100%;
   padding-top: 8px;
   font-size: 0.8rem;
 }
 
-#clinicInfo {
+header .breadcrumb {
+  margin: 0 0 1.2rem 1.2rem;
+}
+
+header .breadcrumb ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#clinicInfo .sideMenu {
+header .breadcrumb ul li {
+  font-size: 0.9rem;
+  padding-left: 0.8rem;
+}
+
+header .breadcrumb ul li a {
+  color: #5c5ce4;
+}
+
+.center {
+  max-width: 960px;
+  margin: auto;
+}
+
+.center #clinicInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.center #clinicInfo .sideMenu {
   width: 300px;
 }
 
-#clinicInfo .sideMenu section {
+.center #clinicInfo .sideMenu section {
   border: 1px solid #6cc6c4;
   margin-bottom: 1.2rem;
   border-radius: 5px 5px 1px 1px;
 }
 
-#clinicInfo .sideMenu section .side_title {
+.center #clinicInfo .sideMenu section .side_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,26 +295,26 @@ nav {
   background: linear-gradient(to bottom, #a9dad9, #6cc6c4);
 }
 
-#clinicInfo .sideMenu section .side_title p {
+.center #clinicInfo .sideMenu section .side_title p {
   color: white;
   line-height: 3rem;
   width: 85%;
   margin: auto;
 }
 
-#clinicInfo .sideMenu section ul {
+.center #clinicInfo .sideMenu section ul {
   padding-bottom: 1.2rem;
   background-color: white;
 }
 
-#clinicInfo .sideMenu section ul li {
+.center #clinicInfo .sideMenu section ul li {
   height: 2.7rem;
   border-bottom: 1px solid #6cc6c4;
   width: 85%;
   margin: auto;
 }
 
-#clinicInfo .sideMenu section ul li a {
+.center #clinicInfo .sideMenu section ul li a {
   line-height: 2.7rem;
   text-decoration: none;
   color: #333;
@@ -303,7 +322,7 @@ nav {
   display: inline-block;
 }
 
-#clinicInfo .sideMenu section ul li a .fas {
+.center #clinicInfo .sideMenu section ul li a .fas {
   color: #6cc6c4;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -311,26 +330,31 @@ nav {
   padding-right: 10px;
 }
 
-.footNavi {
+footer {
+  max-width: 960px;
+  margin: auto;
+}
+
+footer .footNavi {
   margin: 1rem 0;
   height: 2rem;
   background-color: #6cc6c4;
   border-radius: 5px;
 }
 
-.footNavi ul li {
+footer .footNavi ul li {
   float: left;
   padding: 8px 0;
 }
 
-.footNavi ul li a {
+footer .footNavi ul li a {
   text-decoration: none;
   color: white;
   font-size: 0.9rem;
   margin-right: 1rem;
 }
 
-.footNavi ul li a .far {
+footer .footNavi ul li a .far {
   margin: 0 0.8rem;
 }
 
@@ -369,6 +393,7 @@ footer .copyRight {
   margin: 0.5rem 0;
 }
 
+h1,
 h2 {
   font-size: 1.3rem;
   color: white;
@@ -431,63 +456,119 @@ p {
   color: #333;
 }
 
-.humLines {
+nav {
+  display: block;
+  z-index: 100;
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 20%;
-  height: 4.5rem;
-  cursor: pointer;
-  background: #6cc6c4;
-  display: block;
-  text-align: center;
-}
-
-.humLines span {
-  display: block;
-  position: absolute;
+  top: 8px;
+  left: 0;
+  bottom: 0;
   width: 75%;
-  border-top: 8px solid #fff;
-  margin-left: 8px;
+  -webkit-transform: translateX(-285px);
+          transform: translateX(-285px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6cc6c4), to(#a9dad9));
+  background: linear-gradient(to bottom, #6cc6c4, #a9dad9);
 }
 
-.humLines span:nth-child(1) {
-  top: 15px;
+nav ul {
+  margin: 0;
+  padding: 0;
 }
 
-.humLines span:nth-child(2) {
-  top: 35px;
+nav ul li {
+  position: relative;
+  border-bottom: 1px solid white;
 }
 
-.humLines span:nth-child(3) {
-  top: 55px;
+nav ul li a {
+  display: block;
+  padding: 1.3rem 0 1.3rem 0.8rem;
+  text-decoration: none;
+  color: white;
+  line-height: 1.4em;
+}
+
+.active nav {
+  display: block;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .humMenu {
+  padding: 1.5rem;
+}
+
+.toggle_btn {
+  z-index: 100;
+  display: block;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 42px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
-.humMenu .active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
-
-.humMenu ul {
-  background: #6cc6c4;
-}
-
-.humMenu ul li {
-  font-size: 1.2rem;
-}
-
-.humMenu ul li a {
+.toggle_btn span {
   display: block;
-  text-decoration: none;
-  color: white;
+  position: absolute;
+  background-color: #333;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 30px;
+  height: 2px;
+}
+
+.active .toggle_btn span {
+  background-color: #fff;
+}
+
+.active .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+          transform: translateY(10px) rotate(-315deg);
+}
+
+.active .toggle_btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.active .toggle_btn span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+          transform: translateY(-10px) rotate(315deg);
+}
+
+#mask {
+  display: none;
+  position: fixed;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  cursor: pointer;
+}
+
+.active #mask {
+  opacity: 0.8;
+  display: block;
+}
+
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
 }
 
 .index {
@@ -552,9 +633,8 @@ p {
   margin: 0 0 0 auto;
 }
 
-#access .inner .map {
+#access .inner iframe {
   width: 100%;
-  height: auto;
 }
 
 #access .inner a {
@@ -709,22 +789,22 @@ p {
 }
 
 @media screen and (max-width: 680px) {
-  .center .headText {
-    margin-left: 1rem;
-  }
-  .center header {
+  header .head_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .center header .headLogo {
-    margin-left: 1rem;
+  header .head_container .headLogo {
+    height: 60px;
   }
-  .center header .headRight {
-    margin: auto;
+  header .head_container .headRight {
+    margin: 0 auto;
   }
-  .center #gnavi {
+  header #gnavi {
+    display: none;
+  }
+  header .breadcrumb {
     display: none;
   }
   .center #clinicInfo {
@@ -776,10 +856,10 @@ p {
   .center #clinicInfo #access .inner .h3_container .access_address .address_container {
     padding: 0;
   }
-  .center .footNavi {
+  footer .footNavi {
     display: none;
   }
-  .center footer .baseInfo {
+  footer .baseInfo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -789,13 +869,13 @@ p {
             flex-direction: column;
     text-align: center;
   }
-  .center footer .baseInfo span {
+  footer .baseInfo span {
     padding-bottom: 0.5rem;
   }
 }
 
 @media screen and (min-width: 680px) {
-  .humMenu {
+  #navArea {
     display: none;
   }
 }

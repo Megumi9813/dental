@@ -131,147 +131,158 @@ body {
   background-color: #f3f0f0;
 }
 
-.headBorder {
-  border: 5px solid rgb(108, 198, 196);
-  width: 100vw;
+header {
+  .headBorder {
+    border-top: 8px solid rgb(108, 198, 196);
+    width: 100%;
+    position: fixed;
+  }
+  .head_container {
+    display: flex;
+    max-width: 960px;
+    margin: auto;
+    .headLogo {
+      background: url(imgs/siteTitle.png) no-repeat center;
+      width: 250px;
+      margin: 2rem 0 0 1rem;
+    }
+    .headRight {
+      margin: 0 0 0 auto;
+      width: 280px;
+      color: #333;
+      .headText {
+        padding: 2vh 0 2vh;
+        width: 280px;
+        margin: 0 0 0 auto;
+        font-size: 0.8rem;
+        color: #333;
+      }
+      .tel {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        .fas {
+          font-size: 1.7rem;
+          padding-right: 1rem;
+        }
+      }
+      .openHour {
+        font-size: 0.9rem;
+        border: 1px solid;
+        border-radius: 1px;
+        height: 2.5rem;
+        text-align: center;
+        padding: 11px;
+        margin: 0.6rem 0 1rem 0;
+        span {
+          color: #d00606;
+        }
+      }
+    }
+  }
+  #gnavi {
+    max-width: 960px;
+    border: 1px solid rgb(108, 198, 196);
+    margin: 0 auto 1.2rem auto;
+    height: 6rem;
+    background-color: rgb(108, 198, 196);
+    border-radius: 5px;
+    background: linear-gradient(
+      to bottom,
+      rgb(169, 218, 217),
+      rgb(108, 198, 196)
+    );
+    ul {
+      li {
+        height: 5.9rem;
+        float: left;
+        width: 20%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        + li {
+          border-left: 1px solid rgb(108, 198, 196);
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          display: inline-block;
+          width: 100%;
+          font-size: 1.1rem;
+          padding: 2rem 0;
+          span {
+            display: inline-block;
+            width: 100%;
+            padding-top: 8px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  .breadcrumb {
+    margin: 0 0 1.2rem 1.2rem;
+    ul {
+      display: flex;
+      li {
+        font-size: 0.9rem;
+        padding-left: 0.8rem;
+        a {
+          color: #5c5ce4;
+        }
+      }
+    }
+  }
 }
 
 .center {
   max-width: 960px;
   margin: auto;
-}
-
-.headText {
-  padding: 2vh 0 2vh;
-  width: 280px;
-  margin: 0 0 0 auto;
-  font-size: 0.8rem;
-  color: #333;
-}
-
-header {
-  display: flex;
-  .headLogo {
-    background: url(imgs/siteTitle.png) no-repeat center;
-    width: 260px;
-    height: 60px;
-  }
-  .headRight {
-    margin: 0 0 0 auto;
-    width: 280px;
-    color: #333;
-    .tel {
-      font-size: 2rem;
-      margin-top: 0.5rem;
-      .fas {
-        font-size: 1.7rem;
-        padding-right: 1rem;
-      }
-    }
-    .openHour {
-      font-size: 0.9rem;
-      border: 1px solid;
-      border-radius: 1px;
-      height: 2.5rem;
-      text-align: center;
-      padding: 11px;
-      margin-top: 0.6rem;
-      span {
-        color: #d00606;
-      }
-    }
-  }
-}
-
-nav {
-  display: block;
-}
-
-#gnavi {
-  border: 1px solid rgb(108, 198, 196);
-  margin: 1.2rem 0 1.2rem 0;
-  height: 6.6rem;
-  background-color: rgb(108, 198, 196);
-  border-radius: 5px;
-  background: linear-gradient(
-    to bottom,
-    rgb(169, 218, 217),
-    rgb(108, 198, 196)
-  );
-  ul {
-    li {
-      height: 6.5rem;
-      float: left;
-      width: 20%;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      + li {
-        border-left: 1px solid rgb(108, 198, 196);
-      }
-      a {
-        text-decoration: none;
-        color: white;
-        display: inline-block;
-        width: 100%;
-        font-size: 1.1rem;
-        padding: 2rem 0;
-        span {
-          display: inline-block;
-          width: 100%;
-          padding-top: 8px;
-          font-size: 0.8rem;
+  #clinicInfo {
+    display: flex;
+    .sideMenu {
+      width: 300px;
+      section {
+        border: 1px solid rgb(108, 198, 196);
+        margin-bottom: 1.2rem;
+        border-radius: 5px 5px 1px 1px;
+        .side_title {
+          display: flex;
+          align-items: center;
+          padding-left: 1.5rem;
+          height: 3rem;
+          background-color: rgb(108, 198, 196);
+          background: linear-gradient(
+            to bottom,
+            rgb(169, 218, 217),
+            rgb(108, 198, 196)
+          );
+          p {
+            color: white;
+            line-height: 3rem;
+            width: 85%;
+            margin: auto;
+          }
         }
-      }
-    }
-  }
-}
-
-#clinicInfo {
-  display: flex;
-  .sideMenu {
-    width: 300px;
-    section {
-      border: 1px solid rgb(108, 198, 196);
-      margin-bottom: 1.2rem;
-      border-radius: 5px 5px 1px 1px;
-      .side_title {
-        display: flex;
-        align-items: center;
-        padding-left: 1.5rem;
-        height: 3rem;
-        background-color: rgb(108, 198, 196);
-        background: linear-gradient(
-          to bottom,
-          rgb(169, 218, 217),
-          rgb(108, 198, 196)
-        );
-        p {
-          color: white;
-          line-height: 3rem;
-          width: 85%;
-          margin: auto;
-        }
-      }
-      ul {
-        padding-bottom: 1.2rem;
-        background-color: white;
-        li {
-          height: 2.7rem;
-          border-bottom: 1px solid rgb(108, 198, 196);
-          width: 85%;
-          margin: auto;
-          a {
-            line-height: 2.7rem;
-            text-decoration: none;
-            color: #333;
-            width: 100%;
-            display: inline-block;
-            .fas {
-              color: rgb(108, 198, 196);
-              transform: rotate(45deg);
-              font-size: 0.5rem;
-              padding-right: 10px;
+        ul {
+          padding-bottom: 1.2rem;
+          background-color: white;
+          li {
+            height: 2.7rem;
+            border-bottom: 1px solid rgb(108, 198, 196);
+            width: 85%;
+            margin: auto;
+            a {
+              line-height: 2.7rem;
+              text-decoration: none;
+              color: #333;
+              width: 100%;
+              display: inline-block;
+              .fas {
+                color: rgb(108, 198, 196);
+                transform: rotate(45deg);
+                font-size: 0.5rem;
+                padding-right: 10px;
+              }
             }
           }
         }
@@ -280,29 +291,30 @@ nav {
   }
 }
 
-.footNavi {
-  margin: 1rem 0;
-  height: 2rem;
-  background-color: rgb(108, 198, 196);
-  border-radius: 5px;
-  ul {
-    li {
-      float: left;
-      padding: 8px 0;
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 0.9rem;
-        margin-right: 1rem;
-        .far {
-          margin: 0 0.8rem;
+footer {
+  max-width: 960px;
+  margin: auto;
+  .footNavi {
+    margin: 1rem 0;
+    height: 2rem;
+    background-color: rgb(108, 198, 196);
+    border-radius: 5px;
+    ul {
+      li {
+        float: left;
+        padding: 8px 0;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 0.9rem;
+          margin-right: 1rem;
+          .far {
+            margin: 0 0.8rem;
+          }
         }
       }
     }
   }
-}
-
-footer {
   .baseInfo {
     padding-bottom: 2vh;
     text-align: right;
@@ -336,6 +348,7 @@ footer {
   margin: 0.5rem 0;
 }
 
+h1,
 h2 {
   font-size: 1.3rem;
   color: white;
@@ -384,55 +397,102 @@ p {
   color: #333;
 }
 //////////////////////////////////humberger_manu///////////////
-.humLines {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 20%;
-  height: 4.5rem;
-  cursor: pointer;
-  background: rgb(108, 198, 196);
+nav {
   display: block;
-  text-align: center;
-  span {
-    display: block;
-    position: absolute;
-    width: 75%;
-    border-top: 8px solid #fff;
-    margin-left: 8px;
-  }
-  span:nth-child(1) {
-    top: 15px;
-  }
-  span:nth-child(2) {
-    top: 35px;
-  }
-  span:nth-child(3) {
-    top: 55px;
-  }
-}
-
-.humMenu {
+  z-index: 100;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 8px;
+  left: 0;
+  bottom: 0;
+  width: 75%;
+  transform: translateX(-285px);
   transition: all 0.5s;
-  .active {
-    transform: translateX(0%);
-  }
+  background: linear-gradient(
+    to bottom,
+    rgb(108, 198, 196),
+    rgb(169, 218, 217)
+  );
   ul {
-    background: rgb(108, 198, 196);
+    margin: 0;
+    padding: 0;
     li {
-      font-size: 1.2rem;
+      position: relative;
+      border-bottom: 1px solid white;
       a {
         display: block;
+        padding: 1.3rem 0 1.3rem 0.8rem;
         text-decoration: none;
         color: white;
+        line-height: 1.4em;
       }
     }
   }
 }
-
+.active nav {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+.humMenu {
+  padding: 1.5rem;
+}
+.toggle_btn {
+  z-index: 100;
+  display: block;
+  position: fixed;
+  top: 42px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+  span {
+    display: block;
+    position: absolute;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all 0.5s;
+    width: 30px;
+    height: 2px;
+  }
+}
+.active .toggle_btn {
+  span {
+    background-color: #fff;
+  }
+  span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+  }
+}
+#mask {
+  display: none;
+  position: fixed;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  cursor: pointer;
+}
+.active #mask {
+  opacity: 0.8;
+  display: block;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
 //////////////////////////////humberger_menu_end////////////
 
 //////////////////////////////index.html////////////////////
@@ -488,9 +548,8 @@ p {
   width: 640px;
   margin: 0 0 0 auto;
   .inner {
-    .map {
+    iframe {
       width: 100%;
-      height: auto;
     }
     a {
       display: inline-block;
@@ -622,22 +681,24 @@ p {
 
 //////////////////mobile/////////////////////////////////
 @media screen and (max-width: 680px) {
-  .center {
-    .headText {
-      margin-left: 1rem;
-    }
-    header {
+  header {
+    .head_container {
       flex-direction: column;
       .headLogo {
-        margin-left: 1rem;
+        height: 60px;
       }
       .headRight {
-        margin: auto;
+        margin: 0 auto;
       }
     }
     #gnavi {
       display: none;
     }
+    .breadcrumb {
+      display: none;
+    }
+  }
+  .center {
     #clinicInfo {
       margin: 1rem;
       .sideMenu {
@@ -689,24 +750,24 @@ p {
         }
       }
     }
+  }
+  footer {
     .footNavi {
       display: none;
     }
-    footer {
-      .baseInfo {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        span {
-          padding-bottom: 0.5rem;
-        }
+    .baseInfo {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      span {
+        padding-bottom: 0.5rem;
       }
     }
   }
 }
 
 @media screen and (min-width: 680px) {
-  .humMenu {
+  #navArea {
     display: none;
   }
 }
