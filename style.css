@@ -154,9 +154,7 @@ header .head_container {
 }
 
 header .head_container .headLogo {
-  background: url(imgs/siteTitle.png) no-repeat center;
-  width: 250px;
-  margin: 2rem 0 0 1rem;
+  margin: auto 0;
 }
 
 header .head_container .headRight {
@@ -465,8 +463,8 @@ nav {
   left: 0;
   bottom: 0;
   width: 75%;
-  -webkit-transform: translateX(-285px);
-          transform: translateX(-285px);
+  -webkit-transform: translateX(-520px);
+          transform: translateX(-520px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background: -webkit-gradient(linear, left top, left bottom, from(#6cc6c4), to(#a9dad9));
@@ -504,26 +502,29 @@ nav ul li a {
 
 .toggle_btn {
   z-index: 100;
-  display: block;
+  display: inline-block;
   position: fixed;
-  top: 42px;
-  right: 18px;
-  width: 30px;
-  height: 30px;
+  top: 43px;
+  right: 22px;
+  width: 35px;
+  height: 35px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border-radius: 3px;
+  background-color: #6cc6c4;
   cursor: pointer;
 }
 
 .toggle_btn span {
   display: block;
   position: absolute;
-  background-color: #333;
+  background-color: white;
   border-radius: 4px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  width: 30px;
-  height: 2px;
+  width: 75%;
+  height: 3px;
+  margin: 0 0.3rem;
 }
 
 .active .toggle_btn span {
@@ -561,15 +562,15 @@ nav ul li a {
 }
 
 .toggle_btn span:nth-child(1) {
-  top: 4px;
+  top: 6px;
 }
 
 .toggle_btn span:nth-child(2) {
-  top: 14px;
+  top: 16px;
 }
 
 .toggle_btn span:nth-child(3) {
-  bottom: 4px;
+  bottom: 6px;
 }
 
 .index {
@@ -797,7 +798,10 @@ nav ul li a {
             flex-direction: column;
   }
   header .head_container .headLogo {
-    height: 60px;
+    margin: 3rem 0 1rem 1rem;
+  }
+  header .head_container .headLogo img {
+    width: 230px;
   }
   header .head_container .headRight {
     margin: 0 auto;

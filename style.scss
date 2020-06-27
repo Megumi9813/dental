@@ -142,9 +142,7 @@ header {
     max-width: 960px;
     margin: auto;
     .headLogo {
-      background: url(imgs/siteTitle.png) no-repeat center;
-      width: 250px;
-      margin: 2rem 0 0 1rem;
+      margin: auto 0;
     }
     .headRight {
       margin: 0 0 0 auto;
@@ -406,7 +404,7 @@ nav {
   left: 0;
   bottom: 0;
   width: 75%;
-  transform: translateX(-285px);
+  transform: translateX(-520px);
   transition: all 0.5s;
   background: linear-gradient(
     to bottom,
@@ -439,22 +437,25 @@ nav {
 }
 .toggle_btn {
   z-index: 100;
-  display: block;
+  display: inline-block;
   position: fixed;
-  top: 42px;
-  right: 18px;
-  width: 30px;
-  height: 30px;
+  top: 43px;
+  right: 22px;
+  width: 35px;
+  height: 35px;
   transition: all 0.5s;
+  border-radius: 3px;
+  background-color: rgb(108, 198, 196);
   cursor: pointer;
   span {
     display: block;
     position: absolute;
-    background-color: #333;
+    background-color: white;
     border-radius: 4px;
     transition: all 0.5s;
-    width: 30px;
-    height: 2px;
+    width: 75%;
+    height: 3px;
+    margin: 0 0.3rem;
   }
 }
 .active .toggle_btn {
@@ -486,13 +487,13 @@ nav {
   display: block;
 }
 .toggle_btn span:nth-child(1) {
-  top: 4px;
+  top: 6px;
 }
 .toggle_btn span:nth-child(2) {
-  top: 14px;
+  top: 16px;
 }
 .toggle_btn span:nth-child(3) {
-  bottom: 4px;
+  bottom: 6px;
 }
 //////////////////////////////humberger_menu_end////////////
 
@@ -686,7 +687,10 @@ nav {
     .head_container {
       flex-direction: column;
       .headLogo {
-        height: 60px;
+        margin: 3rem 0 1rem 1rem;
+        img {
+          width: 230px;
+        }
       }
       .headRight {
         margin: 0 auto;
