@@ -504,7 +504,7 @@ nav ul li a {
   z-index: 100;
   display: inline-block;
   position: fixed;
-  top: 43px;
+  top: 25px;
   right: 22px;
   width: 40px;
   height: 38px;
@@ -797,7 +797,7 @@ nav ul li a {
             flex-direction: column;
   }
   header .head_container .headLogo {
-    margin: 3rem 0 1rem 1rem;
+    margin: 2rem 0 1rem 1rem;
   }
   header .head_container .headLogo img {
     width: 230px;
