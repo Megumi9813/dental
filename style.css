@@ -506,18 +506,17 @@ nav ul li a {
   position: fixed;
   top: 43px;
   right: 22px;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 38px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  border-radius: 3px;
+  border-radius: 1px;
   background-color: #6cc6c4;
   cursor: pointer;
 }
 
 .toggle_btn span {
   display: block;
-  position: absolute;
   background-color: white;
   border-radius: 4px;
   -webkit-transition: all 0.5s;
@@ -562,15 +561,15 @@ nav ul li a {
 }
 
 .toggle_btn span:nth-child(1) {
-  top: 6px;
+  margin-top: 7px;
 }
 
 .toggle_btn span:nth-child(2) {
-  top: 16px;
+  margin-top: 7px;
 }
 
 .toggle_btn span:nth-child(3) {
-  bottom: 6px;
+  margin-top: 7px;
 }
 
 .index {
